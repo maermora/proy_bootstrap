@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registro libreta militar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <form action="" class="main-form">
+        <div class="header">
+            <h2 align="center">Registro para libreta militar</h2>
+        </div>
+        <div class="logo">
+            <img src="militares.jpg" alt="" width="700px" height="300px" class="imgredonda">
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="t_document">Tipo de documento</label>
+                    <select name="document" id="document" class="form-control">
+                        <option value="CC">C.C</option>
+                        <option value="TI">T.I</option>
+                        <option value="CE">C.E</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="n_document">Numero de documento</label>
+                    <input type="text" name="idnumber" id="idnumber" class="form-control" required>   
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="names">Nombres</label>
+                    <input type="text" name="idnames" id="idnames" class="form-control" required>
+        
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="lnames">Apellidos</label>
+                    <input type="text" name="idlnames" id="idlnames" class="form-control" required>
+                </div>
+        
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="gender">Genero</label>
+                    <select name="gender" id="gender" class="form-control">
+                        <option value="male">Masculino</option>
+                        <option value="female">Femenino</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="civil_state">Grupo sanguineo</label>
+                    <br>
+                    <select class="form-group" name="id_rh" id="id_rh">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="AB">AB</option>
+                        <option value="O">O</option>
+                    </select>
+                    <select class="form-group" name="id_group" id="id_group">
+                        <option value="pos">+</option>
+                        <option value="neg">-</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="f_nac">Fecha de nacimiento</label>
+                    <input type="date" name="idf_nac" id="idf_nac" class="form-control" required>
+                </div>
+            </div>
+            <div class="col">
+                <label for="e_mail">Correo electronico</label>
+                <input type="email" name="ide_mail" id="ide_mail" class="form-control" required placeholder="example@domain.com">
+            </div>
+            <div class="col">
+                <label for="n_tel">Numero Telefonico</label>
+                <input type="tel" name="idn_tel" id="idn_tel" class="form-control" required>
+            </div>
+        </div>
+        <div class="form_group">
+            <label for="t_act">Trabajo actual</label>
+            <input type="text" name="id_trabajo" id="id_trabajo" class="form-control">
+        </div>
+        <div class="form-check">
+            <input type="checkbox" id="accept-terms" class="form-check-input">
+            <label for="accept-terms" class="form-check-label">Aceptar terminos &amp; condiciones</label>
+        </div> <br>     
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+    
+      
+</body>
+</html>

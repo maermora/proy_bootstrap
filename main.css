@@ -1,0 +1,16 @@
+.main-form {
+    width: 700px;
+    margin: auto;
+    
+}
+body {
+    background-color: rgb(173, 231, 173)
+}
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    align-items: center;
+}
+.imgredonda {
+    border-radius: 150px;
+}
